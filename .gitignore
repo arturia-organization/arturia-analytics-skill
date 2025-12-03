@@ -6,3 +6,6 @@ DATA_DICTIONARY.md
 
 # OS files
 .DS_Store
+
+# Build artifacts
+*.zip
