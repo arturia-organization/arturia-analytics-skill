@@ -1,0 +1,8 @@
+# Local Claude Code skill copy
+.claude/
+
+# Original source document (content now in tables/)
+DATA_DICTIONARY.md
+
+# OS files
+.DS_Store
