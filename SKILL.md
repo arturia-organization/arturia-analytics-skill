@@ -1,10 +1,10 @@
 ---
-name: arturia-analytics
+name: arturia-bi
 description: Analyze Arturia webstore and telemetry data in BigQuery. Use when writing SQL queries, analyzing orders/revenue, telemetry/usage data, or asking about table schemas, columns, filters, and data quality.
 allowed-tools: Read, Grep, Glob, Bash, mcp__bigquery
 ---
 
-# Arturia Analytics
+# Arturia BI
 
 ## Purpose
 Assist with data analysis on Arturia's BigQuery data lake, covering webstore transactions and ASC telemetry.

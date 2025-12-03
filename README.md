@@ -1,4 +1,4 @@
-# Arturia Analytics Skill
+# Arturia BI Skill
 
 A Claude skill for analyzing Arturia's BigQuery data lake, covering webstore transactions and ASC telemetry.
 
@@ -8,10 +8,10 @@ A Claude skill for analyzing Arturia's BigQuery data lake, covering webstore tra
 
 ```bash
 # Add to your project
-cp -r . ~/.claude/skills/arturia-analytics/
+cp -r . ~/.claude/skills/arturia-bi/
 
 # Or clone directly
-git clone https://github.com/arturia-organization/arturia-analytics-skill.git ~/.claude/skills/arturia-analytics
+git clone https://github.com/arturia-organization/arturia-analytics-skill.git ~/.claude/skills/arturia-bi
 ```
 
 ### Claude.ai
