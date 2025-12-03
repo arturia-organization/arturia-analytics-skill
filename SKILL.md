@@ -1,13 +1,26 @@
 ---
 name: arturia-analytics
 description: Analyze Arturia webstore and telemetry data in BigQuery. Use when writing SQL queries, analyzing orders/revenue, telemetry/usage data, or asking about table schemas, columns, filters, and data quality.
-allowed-tools: Read, Grep, Glob, Bash
+allowed-tools: Read, Grep, Glob, Bash, mcp__bigquery
 ---
 
 # Arturia Analytics
 
 ## Purpose
 Assist with data analysis on Arturia's BigQuery data lake, covering webstore transactions and ASC telemetry.
+
+## Query Execution
+
+**Check for `bq` CLI first**, then fall back to BigQuery MCP:
+
+1. **If `bq` CLI is available** (Claude Code): Use Bash with `bq query`
+   ```bash
+   bq query --use_legacy_sql=false --max_rows=1000 "SELECT ... FROM \`arturia-bi-405110.dataset.table\`"
+   ```
+
+2. **If MCP is available** (Claude.ai or no CLI): Use the `mcp__bigquery` tool
+
+3. **Otherwise**: Provide the SQL query for the user to run manually
 
 ## Instructions
 
